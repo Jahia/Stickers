@@ -1,0 +1,192 @@
+
+.bodywrapper .pAddSticker {
+	margin:0;
+	padding:0;
+}
+
+
+.sticker{
+	height:150px;
+	padding:10px;
+	width:150px;
+	position:absolute;
+	overflow:hidden;
+	cursor:move;
+
+	font-family:Trebuchet MS,Tahoma,Myriad Pro,Arial,Verdana,sans-serif;
+	font-size:22px;
+
+	/* Adding a CSS3 shadow below the sticker, in the browsers which support it: */
+	-moz-box-shadow:2px 2px 0 #DDDDDD;
+	-webkit-box-shadow:2px 2px 0 #DDDDDD;
+	box-shadow:2px 2px 0 #DDDDDD;
+	position:absolute;
+}
+
+#fancy_ajax .sticker{ cursor:default; }
+
+/* Three styles for the stickers: */
+
+.yellow{
+	background-color:#FDFB8C;
+	border:1px solid #DEDC65;
+}
+
+.blue{
+	background-color:#A6E3FC;
+	border:1px solid #75C5E7;
+}
+
+.green{
+	background-color:#A5F88B;
+	border:1px solid #98E775;
+}
+.red{
+	background-color:#ff9999 ;
+	border:1px solid #ff6666;
+}
+.pink{
+	background-color:#ffccff ;
+	border:1px solid #ff99ff;
+}
+.orange{
+	background-color:#ff9900 ;
+	border:1px solid #ff6600;
+}
+/* Each sticker has a data span, which holds its ID */
+span.data{ display:none; }
+
+
+/* stickit button class: */
+a.stickit-button,a.stickit-button:visited{
+	color:black;
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	height:15px;
+	line-height:16px;
+	padding:6px 5px 4px;
+	text-align:center;
+	width:60px;
+	background: url(img/button_stickit.png) no-repeat center bottom;
+	text-decoration:none;
+}
+
+a.stickit-button:hover{
+	text-decoration:none;
+	background-position:left bottom;
+}
+
+.author{
+	/* The author name on the sticker: */
+	bottom:10px;
+	color:#666666;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:12px;
+	position:absolute;
+	right:10px;
+}
+
+div.delete{
+	/* The author name on the sticker: */
+	bottom:10px;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:12px;
+	position:absolute;
+	left:10px;
+}
+a.delete{
+	display:block;
+	width:24px;
+	height:24px;
+	background: url(img/note_delete.png) no-repeat top left;
+}
+
+#main{
+	/* Contains all the stickers and limits their movement:
+	margin:0 auto;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:9999;
+	top:0;*/
+	display:none;
+}
+
+h3.popupTitle{
+	border-bottom:1px solid #DDDDDD;
+	color:#666666;
+	font-size:24px;
+	font-weight:normal;
+	padding:0 0 5px;
+}
+
+#stickerData{
+	/* The input form in the pop-up: */
+	height:200px;
+	margin:30px 0 0 200px;
+	width:350px;
+}
+
+.sticker-form label{
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	padding-bottom:3px;
+}
+
+.sticker-form textarea, .sticker-form input[type=text]{
+	background-color:#FCFCFC;
+	border:1px solid #AAAAAA;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:16px;
+	height:60px;
+	padding:5px;
+	width:300px;
+	margin-bottom:10px;
+}
+
+.sticker-form input[type=text]{	height:auto; }
+
+.color{
+	/* The color swatches in the form: */
+	cursor:pointer;
+	float:left;
+	height:10px;
+	margin:0 5px 0 0;
+	width:10px;
+}
+
+#sticker-submit{	margin:20px auto; }
+
+
+.bodywrapper .slide {
+	margin: 0;
+	padding: 0;
+}
+.bodywrapper .btn-slide {
+	text-align: center;
+	width: 144px;
+	height: 31px;
+	padding: 5px;
+	margin: 0 auto;
+	display: block;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	background: url(img/btn-slide.gif) no-repeat center bottom;
+}
+.bodywrapper a.btn-slide, .bodywrapper a.btn-slide:link, .bodywrapper a.btn-slide:visited{
+	color: #666;
+	text-decoration:none;
+}
+.bodywrapper a.btn-slide:hover, .bodywrapper a.btn-slide:active{
+	color: #333333;
+	text-decoration:none;
+}
+
+.bodywrapper .active {
+	background-position: right 12px;
+}

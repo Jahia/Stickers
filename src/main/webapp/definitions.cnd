@@ -1,0 +1,12 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+
+[jnt:sticker] > jnt:content, jmix:droppableContent
+- color (string)
+- left (string)
+- top (string)
+- zindex (long)
+- text (string, richtext)
+
+[jnt:stickersarea] > jnt:content, jmix:siteComponent

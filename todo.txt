@@ -1,0 +1,8 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@              TO DO LIST            @@@
+@@@ TO HAVE A WORKING VERSION ON BETA2 @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+- Update jQuery in Jahia from 1.5.0 to 1.5.2 : http://jira.jahia.org/browse/QA-2092
+
+- Do a filter to replace the automatic content list creations (stickers)
