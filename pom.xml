@@ -49,6 +49,12 @@
     <version>1.0-SNAPSHOT</version>    
     <packaging>war</packaging>
     <description>This is the custom module (stickers) for running on a Jahia server.</description>
+    <scm>
+        <connection>scm:git:git@github.com:Jahia/Stickers.git</connection>
+        <url>scm:git:git@github.com:Jahia/Stickers.git</url>
+        <developerConnection>scm:git:git@github.com:Jahia/Stickers.git</developerConnection>
+    </scm>
+
     <repositories>
         <repository>
             <id>jahiaRepository</id>
