@@ -20,7 +20,7 @@
 <c:if test="${renderContext.previewMode || renderContext.contributionMode}">
 
     <%--We load resources @Todo : replace by a simple addRessources--%>
-    <template:addResources type="javascript" resources="jquery.js,jquery-ui.min.js,jquery.fancybox.js,stickers.js"/>
+    <template:addResources type="javascript" resources="jquery.min.js,jquery-ui.min.js,jquery.fancybox.js,stickers.js"/>
     <template:addResources type="css" resources="jquery.fancybox.css,stickers.css" />
 
     <%--We define the path of the currentPage--%>
