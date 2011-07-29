@@ -11,7 +11,7 @@
                     url : "${url.base}${fullPath}/"+$(this).attr('id'),
                     type : "POST",
                     dataType : "json",
-                    data : { methodToCall : "delete"},
+                    data : { jcrMethodToCall : "delete"},
                     success : function(result) {
 						obj.parent().parent().css({'display':'none'});
 						obj.parent().parent().remove();
@@ -82,7 +82,7 @@
                     url : "${url.base}${fullPath}/"+ui.helper.find('span.data').html(),
                     type : "POST",
                     dataType : "json",
-                    data : { methodToCall : "put", top: ui.position.top, left : ui.position.left, zindex : zIndex}
+                    data : { jcrMethodToCall : "put", top: ui.position.top, left : ui.position.left, zindex : zIndex}
                 });
             }
         });
