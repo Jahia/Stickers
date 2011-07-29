@@ -88,6 +88,20 @@
         });
     }
 
+     		/* Sending an AJAX POST request to create the new sticker */
+        $.ajax({
+        url : "${url.base}${fullPath}.json",
+        type : "GET",
+        error : function(result) {
+            $.ajax({
+                   url : "${url.base}${currentPagePath}/*",
+                   type : "POST",
+                   dataType : "json",
+                   data : { jcrNodeType : "jnt:contentList", jcrNodeName : "stickers" }
+            });
+
+        }});
+
 </script>
 
 <p class="pAddSticker"><a href="#addStickerForm" class="btn-slide" id="addButton"><img title="" alt="" src="${url.currentModule}/img/note_add.png" align="absmiddle"/> Add a sticker</a></p>
