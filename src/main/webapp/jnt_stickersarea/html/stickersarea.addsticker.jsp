@@ -51,7 +51,7 @@
 						  tmp.find('div.delete a').attr('id', $(result).attr('j_nodename'));
 
                           //3- We add it to the body
-                          tmp.appendTo($('div.bodywrapper'));    //not finished
+                          tmp.appendTo($('div.bodywrapper').not('.bodywrapper-popup'));
 
                           //4- We make it draggable
                           make_draggable(tmp);
