@@ -88,7 +88,7 @@
         });
     }
 
-     		/* Sending an AJAX POST request to create the new sticker */
+     	/*Check if the stickers content list exist, if not create it.*/
         $.ajax({
         url : "${url.base}${fullPath}.json",
         type : "GET",
