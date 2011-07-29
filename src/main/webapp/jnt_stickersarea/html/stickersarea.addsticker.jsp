@@ -38,7 +38,7 @@
                     url : "${url.base}${fullPath}/*",
                     type : "POST",
                     dataType : "json",
-                    data : { nodeType : "jnt:sticker",  text :  $('.pr-body').val(), color : $.trim($('#previewSticker').attr('class').replace('sticker','')), top : 0, left : 0, zindex:++zIndex},
+                    data : { jcrNodeType : "jnt:sticker",  text :  $('.pr-body').val(), jcrNewNodeOutputFormat : "html", color : $.trim($('#previewSticker').attr('class').replace('sticker','')), top : 0, left : 0, zindex:++zIndex},
                     success : function(result) {
 
                           //1- We duplicate
