@@ -92,6 +92,16 @@
         $.ajax({
         url : "${url.base}${fullPath}.json",
         type : "GET",
+        success : function(result) {
+            if (result) {
+                       $.ajax({
+                           url : "${url.base}${currentPagePath}/*",
+                           type : "POST",
+                           dataType : "json",
+                           data : { jcrNodeType : "jnt:contentList", jcrNodeName : "stickers" }
+                        });
+             }
+        },
         error : function(result) {
             $.ajax({
                    url : "${url.base}${currentPagePath}/*",
